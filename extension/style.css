@@ -1,0 +1,14 @@
+body {
+  padding: 10px;
+  font-family: Arial;
+}
+h2 {
+  text-align: center;
+}
+button {
+  background: #4CAF50;
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}

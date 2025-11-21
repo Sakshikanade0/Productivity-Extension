@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Productivity Tracker",
+  "version": "1.0",
+  "description": "Track browsing time, block distracting sites, and get daily reports.",
+  
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "scripting",
+    "alarms"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+ 
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
